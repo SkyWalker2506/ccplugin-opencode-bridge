@@ -1,0 +1,25 @@
+{
+  "name": "opencode-bridge",
+  "version": "1.0.0",
+  "description": "Claude Code plugin: OpenCode (Zen) cloud models + Ollama local models bridge. Switch between free cloud (Zen) and fully local (Ollama) coding assistants.",
+  "author": "SkyWalker2506",
+  "license": "MIT",
+  "category": "development",
+  "keywords": [
+    "opencode",
+    "zen",
+    "ollama",
+    "local",
+    "free",
+    "open-source",
+    "llm",
+    "qwen",
+    "gemma"
+  ],
+  "commands": [
+    "commands/opencode.md"
+  ],
+  "skills": [
+    "skills/opencode-bridge/SKILL.md"
+  ]
+}
