@@ -1,6 +1,14 @@
-# opencode-bridge
+# opencode-bridge — Claude Code Plugin
+
+by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
 Claude Code plugin for integrating with [OpenCode](https://opencode.ai/) -- providing access to both **Zen** (free cloud models) and **Ollama** (local models).
+
+## Install
+
+```bash
+claude plugin install opencode-bridge@musabkara-claude-marketplace
+```
 
 ## What is this?
 
@@ -22,20 +30,6 @@ Both providers are configured in a single `~/.config/opencode/opencode.json` fil
 | `/opencode pull <model>` | Pull an Ollama model |
 | `/opencode config` | Show/edit OpenCode configuration |
 | `/opencode install` | Install or update the OpenCode CLI |
-
-## Installation
-
-```bash
-claude plugin add SkyWalker2506/ccplugin-opencode-bridge
-```
-
-Or clone and link locally:
-
-```bash
-git clone https://github.com/SkyWalker2506/ccplugin-opencode-bridge.git
-cd ccplugin-opencode-bridge
-claude plugin link .
-```
 
 ## Setup
 
@@ -157,3 +151,8 @@ ccplugin-opencode-bridge/
 ## License
 
 MIT
+
+## Part of
+
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (110 agents, local-first routing)
+- [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 14 plugins
