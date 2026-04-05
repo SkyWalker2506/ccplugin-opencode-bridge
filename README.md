@@ -6,8 +6,11 @@ Claude Code plugin for integrating with [OpenCode](https://opencode.ai/) -- prov
 
 ## Install
 
+> **Note:** Marketplace installation is not yet available. Install manually:
+
 ```bash
-claude plugin install opencode-bridge@musabkara-claude-marketplace
+git clone https://github.com/SkyWalker2506/ccplugin-opencode-bridge.git
+# Then copy commands/ and skills/ into your Claude Code plugin directory
 ```
 
 ## What is this?
@@ -93,12 +96,14 @@ The plugin uses `~/.config/opencode/opencode.json`:
 
 ## Quick Shell Aliases
 
-If you use `claude-config`, these aliases are available:
+If you use [claude-config](https://github.com/SkyWalker2506/claude-config), its `install.sh` sets up these aliases:
 
 | Alias | What it does |
 |-------|-------------|
 | `claude-free` | Opens OpenCode with Zen model (`opencode/gpt-5-nano`) |
 | `claude-local` | Opens OpenCode with Ollama model (`ollama/qwen2.5-coder:7b`) |
+
+> These aliases are provided by `claude-config`, not this plugin directly.
 
 ## Auto-Trigger
 
@@ -140,6 +145,11 @@ ccplugin-opencode-bridge/
       SKILL.md                   # Auto-trigger routing
   README.md
 ```
+
+## Roadmap
+
+- [ ] Marketplace install: `claude plugin install opencode-bridge@musabkara-claude-marketplace`
+- [ ] Bundled shell aliases (without requiring claude-config)
 
 ## Documentation
 
