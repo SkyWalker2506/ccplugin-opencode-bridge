@@ -20,9 +20,13 @@
     "gemma"
   ],
   "commands": [
-    "commands/opencode.md"
+    {
+      "path": "commands/opencode.md"
+    }
   ],
   "skills": [
-    "skills/opencode-bridge/SKILL.md"
+    {
+      "path": "skills/opencode-bridge/SKILL.md"
+    }
   ]
 }
