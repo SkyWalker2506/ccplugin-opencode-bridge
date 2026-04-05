@@ -6,17 +6,14 @@ Claude Code plugin for integrating with [OpenCode](https://opencode.ai/) -- prov
 
 ## Install
 
-> **Note:** Marketplace installation is not yet available. Install manually:
-
 ```bash
-git clone https://github.com/SkyWalker2506/ccplugin-opencode-bridge.git
-# Then copy commands/ and skills/ into your Claude Code plugin directory
+bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) opencode-bridge
 ```
 
-To add shell aliases (`claude-free` and `claude-local`) to your shell rc:
+Or via Claude Code native marketplace:
 
 ```bash
-bash ccplugin-opencode-bridge/install.sh
+claude plugin install opencode-bridge@musabkara-claude-marketplace
 ```
 
 ## What is this?
@@ -157,10 +154,6 @@ ccplugin-opencode-bridge/
   install.sh                     # Shell alias installer
   README.md
 ```
-
-## Roadmap
-
-- [ ] Marketplace install: `claude plugin install opencode-bridge@musabkara-claude-marketplace`
 
 ## Documentation
 
