@@ -2,7 +2,10 @@
   "name": "opencode-bridge",
   "version": "1.0.0",
   "description": "Claude Code plugin: OpenCode (Zen) cloud models + Ollama local models bridge. Switch between free cloud (Zen) and fully local (Ollama) coding assistants.",
-  "author": "Musab Kara",
+  "author": {
+    "name": "Musab Kara",
+    "url": "https://github.com/SkyWalker2506"
+  },
   "license": "MIT",
   "category": "development",
   "keywords": [
