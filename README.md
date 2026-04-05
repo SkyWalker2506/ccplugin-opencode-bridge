@@ -13,6 +13,12 @@ git clone https://github.com/SkyWalker2506/ccplugin-opencode-bridge.git
 # Then copy commands/ and skills/ into your Claude Code plugin directory
 ```
 
+To add shell aliases (`claude-free` and `claude-local`) to your shell rc:
+
+```bash
+bash ccplugin-opencode-bridge/install.sh
+```
+
 ## What is this?
 
 When Claude Code quota runs out or you need a free/local alternative, OpenCode bridges the gap:
@@ -94,16 +100,21 @@ The plugin uses `~/.config/opencode/opencode.json`:
 }
 ```
 
-## Quick Shell Aliases
+## Shell Aliases
 
-If you use [claude-config](https://github.com/SkyWalker2506/claude-config), its `install.sh` sets up these aliases:
+Run `install.sh` to add these aliases directly to your shell rc (no `claude-config` required):
 
 | Alias | What it does |
 |-------|-------------|
 | `claude-free` | Opens OpenCode with Zen model (`opencode/gpt-5-nano`) |
 | `claude-local` | Opens OpenCode with Ollama model (`ollama/qwen2.5-coder:7b`) |
 
-> These aliases are provided by `claude-config`, not this plugin directly.
+```bash
+bash install.sh
+source ~/.zshrc  # or ~/.bashrc
+```
+
+If you use [claude-config](https://github.com/SkyWalker2506/claude-config), these aliases are also set up by its `install.sh`.
 
 ## Auto-Trigger
 
@@ -143,13 +154,13 @@ ccplugin-opencode-bridge/
   skills/
     opencode-bridge/
       SKILL.md                   # Auto-trigger routing
+  install.sh                     # Shell alias installer
   README.md
 ```
 
 ## Roadmap
 
 - [ ] Marketplace install: `claude plugin install opencode-bridge@musabkara-claude-marketplace`
-- [ ] Bundled shell aliases (without requiring claude-config)
 
 ## Documentation
 
