@@ -111,12 +111,6 @@ bash install.sh
 source ~/.zshrc  # or ~/.bashrc
 ```
 
-If you use [claude-config](https://github.com/SkyWalker2506/claude-config), these aliases are also set up by its `install.sh`.
-
-## Auto-Trigger
-
-The `skills/opencode-bridge/SKILL.md` skill auto-detects when you mention opencode, zen, ollama, local models, free models, or specific model names (qwen, gemma, etc.) and routes to the appropriate `/opencode` subcommand.
-
 ## Available Free Models
 
 ### Zen Cloud (via OpenCode)
@@ -140,33 +134,12 @@ The `skills/opencode-bridge/SKILL.md` skill auto-detects when you mention openco
 
 Pull any model with: `ollama pull <model>`
 
-## Structure
-
-```
-ccplugin-opencode-bridge/
-  .claude-plugin/
-    plugin.json                  # Plugin manifest
-  commands/
-    opencode.md                  # OpenCode management command
-  skills/
-    opencode-bridge/
-      SKILL.md                   # Auto-trigger routing
-  install.sh                     # Shell alias installer
-  README.md
-```
-
-## Documentation
-
-- [OpenCode](https://opencode.ai/)
-- [Zen Models & Pricing](https://open-code.ai/docs/en/zen)
-- [OpenCode Providers](https://open-code.ai/docs/en/providers)
-- [Ollama](https://ollama.ai/)
-
 ## License
 
 MIT
 
 ## Part of
 
-- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (110 agents, local-first routing)
-- [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 14 plugins
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (134 agents, local-first routing)
+- [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 18 plugins
+- [ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ) — Claude ecosystem HQ
