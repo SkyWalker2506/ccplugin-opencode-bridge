@@ -1,0 +1,42 @@
+{
+  "cds_version": "1.0",
+  "name": "ccplugin-opencode-bridge",
+  "type": "plugin",
+  "input_patterns": [
+    {
+      "type": "auto_trigger",
+      "keywords": [
+        "opencode",
+        "zen",
+        "ollama",
+        "local model"
+      ],
+      "confirm": false,
+      "cooldown": 0
+    },
+    {
+      "type": "config_file",
+      "description": "Model selection via config"
+    }
+  ],
+  "output_patterns": [
+    {
+      "type": "terminal_text",
+      "max_lines": 20
+    }
+  ],
+  "lifecycle": {
+    "preflight": {
+      "required_tools": [],
+      "required_secrets": [
+        "OPENROUTER_API_KEY"
+      ],
+      "required_mcp": []
+    }
+  },
+  "error_handling": {
+    "retry_network": true,
+    "max_retries": 3,
+    "fallback": "ollama local"
+  }
+}
