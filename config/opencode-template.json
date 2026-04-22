@@ -1,0 +1,26 @@
+{
+  "enabled_providers": ["opencode", "ollama"],
+  "model": "opencode/gpt-5-nano",
+  "small_model": "opencode/gpt-5-nano",
+  "provider": {
+    "opencode": {
+      "options": { "apiKey": "{env:OPENCODE_ZEN_API_KEY}" },
+      "models": {
+        "gpt-5-nano": { "name": "Zen -- GPT-5 Nano (free tier)" },
+        "minimax-m2.1-free": { "name": "Zen -- MiniMax M2.1 (free, limited)" },
+        "glm-4.7-free": { "name": "Zen -- GLM 4.7 (free, limited)" },
+        "kimi-k2.5-free": { "name": "Zen -- Kimi K2.5 (free, limited)" },
+        "big-pickle": { "name": "Zen -- Big Pickle (free, limited)" }
+      }
+    },
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": { "baseURL": "http://localhost:11434/v1" },
+      "models": {
+        "qwen2.5-coder:7b": { "name": "Qwen 2.5 Coder 7B (local)" },
+        "gemma3:4b": { "name": "Gemma 3 4B (local, general purpose)" }
+      }
+    }
+  }
+}

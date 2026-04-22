@@ -1,0 +1,67 @@
+{
+  "_updated": "2026-04-22",
+  "_note": "Static model list. Run /opencode models to see what's actually pulled locally.",
+  "zen": [
+    {
+      "id": "opencode/gpt-5-nano",
+      "name": "GPT-5 Nano",
+      "provider": "opencode",
+      "tier": "free",
+      "notes": "Default free tier model"
+    },
+    {
+      "id": "opencode/minimax-m2.1-free",
+      "name": "MiniMax M2.1",
+      "provider": "opencode",
+      "tier": "free",
+      "notes": "Free, limited availability"
+    },
+    {
+      "id": "opencode/glm-4.7-free",
+      "name": "GLM 4.7",
+      "provider": "opencode",
+      "tier": "free",
+      "notes": "Free, limited availability"
+    },
+    {
+      "id": "opencode/kimi-k2.5-free",
+      "name": "Kimi K2.5",
+      "provider": "opencode",
+      "tier": "free",
+      "notes": "Free, limited availability"
+    },
+    {
+      "id": "opencode/big-pickle",
+      "name": "Big Pickle",
+      "provider": "opencode",
+      "tier": "free",
+      "notes": "Free, limited availability"
+    }
+  ],
+  "ollama": [
+    {
+      "id": "ollama/qwen2.5-coder:7b",
+      "name": "Qwen 2.5 Coder 7B",
+      "size_gb": 4.7,
+      "notes": "Best for coding tasks"
+    },
+    {
+      "id": "ollama/qwen2.5-coder:14b",
+      "name": "Qwen 2.5 Coder 14B",
+      "size_gb": 9.0,
+      "notes": "Higher quality coding, needs more RAM"
+    },
+    {
+      "id": "ollama/gemma3:4b",
+      "name": "Gemma 3 4B",
+      "size_gb": 3.3,
+      "notes": "Lightweight, general purpose"
+    },
+    {
+      "id": "ollama/gemma3:12b",
+      "name": "Gemma 3 12B",
+      "size_gb": 8.1,
+      "notes": "Larger Gemma, better quality"
+    }
+  ]
+}

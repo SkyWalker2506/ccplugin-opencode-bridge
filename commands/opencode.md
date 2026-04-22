@@ -18,7 +18,13 @@ Manage OpenCode/Zen connections, switch models, and configure local Ollama.
 
 ### Default: Show Status
 
-When invoked without arguments, check and display:
+When invoked without arguments, run the status script:
+
+```bash
+bash ~/.claude/plugins/opencode-bridge/scripts/opencode-status.sh
+```
+
+Display the output. The script checks:
 
 ```
 1. Check if OpenCode CLI is installed:
